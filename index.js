@@ -29,6 +29,9 @@ app.use(bodyParser.json()); //crucial for post requests from client
 const categoryRoutes = require('./routes/category.routes')
 app.use('/api', categoryRoutes)
 
+const productRoutes = require('./routes/product.routes')
+app.use('/api', productRoutes)
+
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}, dirname ${__dirname}`))
