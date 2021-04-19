@@ -22,6 +22,9 @@ const productSchema = mongoose.Schema({
   stock: {
     type: Number,
   },
+  sold: {
+    type: Number
+  },
   fotoImg: {
     type: String,
   },
