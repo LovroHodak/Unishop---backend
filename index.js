@@ -24,6 +24,9 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); //crucial for post requests from client
 
+// !!!!!!!!
+var path = require("path");
+app.use(express.static(path.join(__dirname, "public")));
 
 //ROUTES
 const categoryRoutes = require('./routes/category.routes')

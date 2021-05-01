@@ -4,4 +4,4 @@
 4. npm i body-parser cors
 
 5. npm i cloudinary connect-mongo morgan multer multer-storage-cloudinary
-6. 
+6. npm i path
