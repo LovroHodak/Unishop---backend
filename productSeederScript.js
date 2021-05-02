@@ -9,8 +9,8 @@ Product.insertMany([
         shortDesc: "Some quick example text to build on the card title and make up the bulk of the cards content.",
         longDesc: 'Unique and meaningful product descriptions have an effect on the visibility in search engines and on the behavior of users in an online shop. Create quality product descriptions that highlight benefits to effectively boost the conversion rate and shopping cart size! AX Semantics content automation software offers you all the features you need to create meaningful product descriptions faster than ever before.',
         price: 99,
-        stock: 45,
-        sold: 5,
+        stock: 50,
+        sold: 0,
         fotoImg: [
           {
             id: 1,
@@ -45,8 +45,8 @@ Product.insertMany([
         shortDesc: "Some quick example text to build on the card title and make up the bulk of the cards content.",
         longDesc: 'Unique and meaningful product descriptions have an effect on the visibility in search engines and on the behavior of users in an online shop. Create quality product descriptions that highlight benefits to effectively boost the conversion rate and shopping cart size! AX Semantics content automation software offers you all the features you need to create meaningful product descriptions faster than ever before.',
         price: 89,
-        stock: 40,
-        sold: 10,
+        stock: 50,
+        sold: 0,
         fotoImg: [
           {
             id: 1,
@@ -81,8 +81,8 @@ Product.insertMany([
         shortDesc: "Some quick example text to build on the card title and make up the bulk of the cards content.",
         longDesc: 'Unique and meaningful product descriptions have an effect on the visibility in search engines and on the behavior of users in an online shop. Create quality product descriptions that highlight benefits to effectively boost the conversion rate and shopping cart size! AX Semantics content automation software offers you all the features you need to create meaningful product descriptions faster than ever before.',
         price: 79,
-        stock: 35,
-        sold: 15,
+        stock: 50,
+        sold: 0,
         fotoImg: [
           {
             id: 1,
@@ -118,8 +118,8 @@ Product.insertMany([
         shortDesc: "Some quick example text to build on the card title and make up the bulk of the cards content.",
         longDesc: 'Unique and meaningful product descriptions have an effect on the visibility in search engines and on the behavior of users in an online shop. Create quality product descriptions that highlight benefits to effectively boost the conversion rate and shopping cart size! AX Semantics content automation software offers you all the features you need to create meaningful product descriptions faster than ever before.',
         price: 599,
-        stock: 45,
-        sold: 5,
+        stock: 50,
+        sold: 0,
         fotoImg: [
           {
             id: 1,
@@ -262,8 +262,8 @@ Product.insertMany([
         shortDesc: "Some quick example text to build on the card title and make up the bulk of the cards content.",
         longDesc: 'Unique and meaningful product descriptions have an effect on the visibility in search engines and on the behavior of users in an online shop. Create quality product descriptions that highlight benefits to effectively boost the conversion rate and shopping cart size! AX Semantics content automation software offers you all the features you need to create meaningful product descriptions faster than ever before.',
         price: 4,
-        stock: 35,
-        sold: 15,
+        stock: 50,
+        sold: 0,
         fotoImg: [
           {
             id: 1,
@@ -298,8 +298,8 @@ Product.insertMany([
         shortDesc: "Some quick example text to build on the card title and make up the bulk of the cards content.",
         longDesc: 'Unique and meaningful product descriptions have an effect on the visibility in search engines and on the behavior of users in an online shop. Create quality product descriptions that highlight benefits to effectively boost the conversion rate and shopping cart size! AX Semantics content automation software offers you all the features you need to create meaningful product descriptions faster than ever before.',
         price: 109,
-        stock: 45,
-        sold: 5,
+        stock: 50,
+        sold: 0,
         fotoImg: [
           {
             id: 1,
@@ -334,8 +334,8 @@ Product.insertMany([
         shortDesc: "Some quick example text to build on the card title and make up the bulk of the cards content.",
         longDesc: 'Unique and meaningful product descriptions have an effect on the visibility in search engines and on the behavior of users in an online shop. Create quality product descriptions that highlight benefits to effectively boost the conversion rate and shopping cart size! AX Semantics content automation software offers you all the features you need to create meaningful product descriptions faster than ever before.',
         price: 19,
-        stock: 35,
-        sold: 15,
+        stock: 50,
+        sold: 0,
         fotoImg: [
           {
             id: 1,
@@ -373,8 +373,8 @@ Product.insertMany([
         shortDesc: "Some quick example text to build on the card title and make up the bulk of the cards content.",
         longDesc: 'Unique and meaningful product descriptions have an effect on the visibility in search engines and on the behavior of users in an online shop. Create quality product descriptions that highlight benefits to effectively boost the conversion rate and shopping cart size! AX Semantics content automation software offers you all the features you need to create meaningful product descriptions faster than ever before.',
         price: 29,
-        stock: 35,
-        sold: 15,
+        stock: 50,
+        sold: 0,
         fotoImg: [
           {
             id: 1,
@@ -411,8 +411,8 @@ Product.insertMany([
         shortDesc: "Some quick example text to build on the card title and make up the bulk of the cards content.",
         longDesc: 'Unique and meaningful product descriptions have an effect on the visibility in search engines and on the behavior of users in an online shop. Create quality product descriptions that highlight benefits to effectively boost the conversion rate and shopping cart size! AX Semantics content automation software offers you all the features you need to create meaningful product descriptions faster than ever before.',
         price: 229,
-        stock: 35,
-        sold: 15,
+        stock: 50,
+        sold: 0,
         fotoImg: [
           {
             id: 1,

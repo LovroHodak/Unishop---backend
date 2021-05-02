@@ -35,6 +35,9 @@ app.use('/api', categoryRoutes)
 const productRoutes = require('./routes/product.routes')
 app.use('/api', productRoutes)
 
+const orderRoutes = require('./routes/order.routes')
+app.use('/api', orderRoutes)
+
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}, dirname ${__dirname}`))
