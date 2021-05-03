@@ -38,6 +38,9 @@ app.use('/api', productRoutes)
 const orderRoutes = require('./routes/order.routes')
 app.use('/api', orderRoutes)
 
+const stripeRoutes = require('./routes/stripe.routes')
+app.use('/api', stripeRoutes);
+
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}, dirname ${__dirname}`))

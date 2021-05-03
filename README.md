@@ -5,3 +5,7 @@
 
 5. npm i cloudinary connect-mongo morgan multer multer-storage-cloudinary
 6. npm i path
+
+7. npm install --save stripe
+
+8. 
