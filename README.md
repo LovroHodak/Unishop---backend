@@ -8,4 +8,5 @@
 
 7. npm install --save stripe
 
-8. 
+8. npm i nodemailer
+(https://stackoverflow.com/questions/45494639/nodemailer-error-self-signed-certificate-in-certificate-chain/52455915) - antiVirus - AVG - "Scan outbound emails (SMTP)"

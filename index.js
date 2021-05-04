@@ -41,6 +41,9 @@ app.use('/api', orderRoutes)
 const stripeRoutes = require('./routes/stripe.routes')
 app.use('/api', stripeRoutes);
 
+const nodemailerRoutes = require('./routes/nodemailer.routes')
+app.use('/api', nodemailerRoutes);
+
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}, dirname ${__dirname}`))
