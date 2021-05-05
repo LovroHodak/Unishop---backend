@@ -45,9 +45,9 @@ router.post("/send-email", (req, res, next) => {
       cart: newClient.cart,
       html: `<h1 style="color:blue;">Thank you ${newClient.name} for ordering!</h1>
       <p>You have ordered following items: </p>
-      <p>${newClient.cart.map((item, i) =>{
-          return ( i + 1) + '. ' + item.namee + ': ' + item.nrOfItemss + ' x ' + item.pricee + '€  ' 
-        })}<p>
+      <ol>${newClient.cart.map((item) =>{
+          return '<li>' + item.namee + ': ' + item.nrOfItemss + ' x ' + item.pricee + ' €  ' + '</li>' 
+        })}</ol>
       <h2>Your total was ${newClient.total} €</h2>
       <h3>Hope to see you soon, Yours Unishop</h3>`,
     })
