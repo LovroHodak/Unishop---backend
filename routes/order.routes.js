@@ -20,6 +20,7 @@ router.post("/newOrder", (req, res) => {
     address: req.body.address,
     city: req.body.city,
     total: req.body.total,
+    payment: req.body.payment,
     cart: req.body.cart,
   })
     .then((response) => {

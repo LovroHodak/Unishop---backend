@@ -20,19 +20,8 @@ let transporter = nodemailer.createTransport({
 
 router.post("/send-email", (req, res, next) => {
   let newClient = req.body;
-  let subject = "Lovro Dev NODEMAILER";
+  let subject = "UniShop, Miha Flajs s.p.";
   let secondMail = NODEMAILER_CC;
-
-  console.log('newClient: ', newClient);
-  console.log('newClient.name: ', newClient.name);
-  console.log('newClient.total: ', newClient.total);
-  console.log('newClient.cart: ', newClient.cart);
-  console.log('newClient.cart.map: ', newClient.cart.map((item) => {
-      return item.namee + item.pricee + item.nrOfItemss
-  }));
-
-
-  
 
   transporter
     .sendMail({
@@ -43,11 +32,24 @@ router.post("/send-email", (req, res, next) => {
       total: newClient.total,
       cc: secondMail,
       cart: newClient.cart,
-      html: `<h1 style="color:blue;">Thank you ${newClient.name} for ordering!</h1>
+      payment: newClient.payment,
+      html: `<h1 style="color:blue;">Thank you ${
+        newClient.name
+      } for ordering!</h1>
       <p>You have ordered following items: </p>
-      <ol>${newClient.cart.map((item) =>{
-          return '<li>' + item.namee + ': ' + item.nrOfItemss + ' x ' + item.pricee + ' €  ' + '</li>' 
-        })}</ol>
+      <ol>${newClient.cart.map((item) => {
+        return (
+          "<li>" +
+          item.namee +
+          ": " +
+          item.nrOfItemss +
+          " x " +
+          item.pricee +
+          " €  " +
+          "</li>"
+        );
+      })}</ol>
+      <p>Payment method: ${newClient.payment}</p>
       <h2>Your total was ${newClient.total} €</h2>
       <h3>Hope to see you soon, Yours Unishop</h3>`,
     })
@@ -60,6 +62,7 @@ router.post("/send-email", (req, res, next) => {
     name: newClient.name,
     total: newClient.total,
     cart: newClient.cart,
+    payment: newClient.payment
   })
     .then((response) => {
       res.status(200).json(response);

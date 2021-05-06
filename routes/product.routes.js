@@ -3,7 +3,6 @@ const router = express.Router();
 const Product = require("../models/product.model");
 
 router.get("/products", (req, res) => {
-  /* console.log("req.body GET", req.body); */
   Product.find()
     .then((products) => {
       res.status(200).json(products);

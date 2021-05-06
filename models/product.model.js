@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
 const ImagesSchema = new Schema({
   id: Number,
   lnk: String,
-  active: Boolean
-})
+  active: Boolean,
+});
 
 const productSchema = Schema({
   id: {
@@ -30,10 +30,9 @@ const productSchema = Schema({
     type: Number,
   },
   sold: {
-    type: Number
+    type: Number,
   },
-  fotoImg: [ImagesSchema]
-  
+  fotoImg: [ImagesSchema],
 });
 
 const Product = mongoose.model("product", productSchema);
