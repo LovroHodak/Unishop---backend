@@ -4,12 +4,14 @@ require("./config/db.config");
 const express = require("express");
 const app = express();
 
+// origin: ["https://mihaunishop.herokuapp.com"],
+// origin: ["http://localhost:3000"],
 //ENABLE FRONT+BACK
 const cors = require("cors");
 app.use(
   cors({
     credentials: true,
-    origin: ["https://mihaunishop.herokuapp.com/"],
+    origin: ["https://mihaunishop.herokuapp.com"],
   })
 );
 

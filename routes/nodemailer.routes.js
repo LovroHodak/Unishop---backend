@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const nodemailer = require("nodemailer");
-const MailModel = require("../models/mail.model");
+//const MailModel = require("../models/mail.model");
 require("dotenv").config();
 
 const NODEMAILER_USER = process.env.NODEMAILER_USER;
@@ -56,7 +56,7 @@ router.post("/send-email", (req, res, next) => {
     .then(() => console.log("SEND mail everything ok!"))
     .catch((error) => console.log(error));
 
-  MailModel.create({
+/*   MailModel.create({
     email: newClient.email,
     subject: subject,
     name: newClient.name,
@@ -66,13 +66,15 @@ router.post("/send-email", (req, res, next) => {
   })
     .then((response) => {
       res.status(200).json(response);
+      console.log("mailmodel created")
     })
     .catch((err) => {
       res.status(500).json({
         error: "Something went wrong",
         message: err,
       });
-    });
+      console.log("mailmodel failedd")
+    }); */
 });
 
 module.exports = router;
