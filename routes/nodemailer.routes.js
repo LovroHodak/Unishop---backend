@@ -16,6 +16,7 @@ let transporter = nodemailer.createTransport({
     user: NODEMAILER_USER,
     pass: NODEMAILER_PASS,
   },
+  port: 465,
 });
 
 router.post("/send-email", (req, res, next) => {

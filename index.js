@@ -11,7 +11,7 @@ const cors = require("cors");
 app.use(
   cors({
     credentials: true,
-    origin: ["https://mihaunishop.herokuapp.com"],
+    origin: ["http://localhost:3000"],
   })
 );
 
